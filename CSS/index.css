@@ -1,0 +1,133 @@
+/*Repositório de fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+.mb-6{
+    margin-bottom: 8rem;
+}
+
+.mt-6{
+    margin-top: 8rem;
+}
+
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+
+.rubik{
+    font-family: I'Rubik', sans-serif;
+}
+
+.strong{
+    font-weight: 600;
+}
+.littleStrong{
+    font-weight: 500;
+}
+
+:root{
+    --extremeBlack: #252729;
+    --darkGray: #505253;
+    --gray: #7C7D7E;
+    --lightGray: #A7A8A9;
+    --lightLightGray: #A7A8A9;
+    --myWhite: #F2F3F8;
+}
+
+.bg_mywhite{
+    background-color: var(--myWhite);
+}
+
+.bg_myblack{
+    background-color: var(--extremeBlack);
+}
+.black-bg{
+    background: var(--extremeBlack);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.textExtremeDark{
+    color: var(--extremeBlack);
+            
+}
+
+.textExtremeDark:hover{
+    color: var(--extremeBlack);
+}
+
+
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: medium;
+  }
+  
+.link:hover {
+    color: #000;
+    text-decoration: none;
+    
+}
+  
+.link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, var(--extremeBlack), var(--darkGray), var(--gray), var(--lightGray));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    
+  }
+  
+  
+  .link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .leftText{
+      text-align: left;
+  }
+
+  .banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    
+    
+  }
+
+
+
+  .img_banner{
+      width: 45vh ;
+      height: 45vh;
+  }
+
+  .min_img{
+      width: 1.5em;
+  }
+
+  .radius-20{
+      border-radius: 40px;
+  }
+
+  #panel1{
+      display: none;
+  }
+
+  #panel2{
+    display: none;
+  }
+
+  #panel3{
+    display: none;
+  }
