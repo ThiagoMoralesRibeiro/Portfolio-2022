@@ -39,15 +39,33 @@ $(document).ready(function () {
 
 
 //Effect appears text change opacity
-$(".thiago").hover(function(){
-        $(".thiago").animate({opacity: '0.5'})
-    })
-})
+$(".thiago").on({
+    mouseenter: function(){
+      $(this).animate({opacity: '0.5'});
+    },
+    mouseleave: function(){
+        $(this).animate({opacity: '100%'});
+    }
+});
+       
+
 //popover
     
-        $('[data-toggle="popover"]').popover();
+$('[data-toggle="popover"]').popover();
     
 
 });
+
+//with scroll appears the img banner
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("imgFade").style.display = "block";
+  } else {
+    document.getElementById("imgFade").style.display = "none";
+  }
+}
 
 
